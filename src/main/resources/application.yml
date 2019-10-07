@@ -8,3 +8,7 @@ spring:
     test-while-idle: true
     validation-query: select 1;
     maxActive: 1
+
+external:
+  api:
+    uri: "https://jsonplaceholder.typicode.com/todos"
