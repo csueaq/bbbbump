@@ -2,40 +2,22 @@ package com.bump.demo.service.pojo.response;
 
 public class ExternalResponse {
 
-    private Integer userId;
-    private Integer id;
-    private String title;
-    private Boolean completed;
+    private Integer numOfFollowers;
+    private String name;
 
-    public Integer getUserId() {
-        return userId;
+    public Integer getNumOfFollowers() {
+        return numOfFollowers;
     }
 
-    public void setUserId(Integer userId) {
-        this.userId = userId;
+    public void setNumOfFollowers(Integer numOfFollowers) {
+        this.numOfFollowers = numOfFollowers;
     }
 
-    public Integer getId() {
-        return id;
+    public String getName() {
+        return name;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public Boolean getCompleted() {
-        return completed;
-    }
-
-    public void setCompleted(Boolean completed) {
-        this.completed = completed;
+    public void setName(String name) {
+        this.name = name;
     }
 }

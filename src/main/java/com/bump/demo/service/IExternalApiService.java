@@ -5,6 +5,6 @@ import java.util.List;
 
 public interface IExternalApiService {
 
-    List<ExternalResponse> getResponses();
+    ExternalResponse getResponse(String username);
 
 }

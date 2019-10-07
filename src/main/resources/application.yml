@@ -11,4 +11,4 @@ spring:
 
 external:
   api:
-    uri: "https://jsonplaceholder.typicode.com/todos"
+    uri: "http://localhost:3000/"

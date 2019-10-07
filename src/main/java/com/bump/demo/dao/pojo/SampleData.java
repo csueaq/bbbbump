@@ -15,15 +15,9 @@ public class SampleData {
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Integer id;
 
-    private String data;
+    private String name;
 
-    public String getData() {
-        return data;
-    }
-
-    public void setData(String data) {
-        this.data = data;
-    }
+    private Integer numOfFollowers;
 
     public Integer getId() {
         return id;
@@ -31,5 +25,21 @@ public class SampleData {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Integer getNumOfFollowers() {
+        return numOfFollowers;
+    }
+
+    public void setNumOfFollowers(Integer numOfFollowers) {
+        this.numOfFollowers = numOfFollowers;
     }
 }

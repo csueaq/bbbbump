@@ -35,9 +35,9 @@ public class SampleDataController {
         return "OK";
     }
 
-    @GetMapping(value = "/externalDate/list")
-    public List<ExternalResponse> listExternalApiData() {
-        return externalApiService.getResponses();
+    @GetMapping(value = "/externalDate/getData/{username}")
+    public ExternalResponse listExternalApiData(@PathVariable String username) {
+        return externalApiService.getResponse(username);
     }
 
     @PostMapping(value = "/sampleData")
